@@ -4,16 +4,18 @@ Community node for [Feedjolt](https://www.feedjolt.com) — customer feedback bo
 
 ## Install
 
-**Not on npm yet.** Self-hosted n8n can install straight from GitHub:
+In n8n (self-hosted): **Settings → Community nodes → Install** → `n8n-nodes-feedjolt`
+
+Or manually:
 
 ```bash
 mkdir -p ~/.n8n/nodes && cd ~/.n8n/nodes
-npm install github:luodaint/n8n-nodes-feedjolt
+npm install n8n-nodes-feedjolt
 ```
 
-Then restart n8n. Enable community packages (`N8N_COMMUNITY_PACKAGES_ENABLED=true`). On n8n 2.x you may also need `N8N_UNVERIFIED_PACKAGES_ENABLED=true` until the package is verified.
+Enable community packages (`N8N_COMMUNITY_PACKAGES_ENABLED=true`). On n8n 2.x you may also need `N8N_UNVERIFIED_PACKAGES_ENABLED=true` until the package is verified in the Creator Portal.
 
-Settings → Community nodes by package name only works after an npm publish (with GitHub Actions provenance for Creator Portal verification). Do not publish until the maintainer says go.
+Fallback from GitHub (no registry): `npm install github:luodaint/n8n-nodes-feedjolt`
 
 Local development:
 
@@ -22,6 +24,7 @@ npm install
 npm run build
 npm run dev
 ```
+
 
 ## Credentials
 
