@@ -1,11 +1,13 @@
-import type {
-	IDataObject,
-	INodeType,
-	INodeTypeDescription,
-	IPollFunctions,
-	INodeExecutionData,
+import {
+	NodeApiError,
+	NodeConnectionTypes,
+	type IDataObject,
+	type INodeExecutionData,
+	type INodeType,
+	type INodeTypeDescription,
+	type IPollFunctions,
+	type JsonObject,
 } from 'n8n-workflow';
-import { NodeConnectionTypes, NodeApiError, type JsonObject } from 'n8n-workflow';
 
 type PollState = {
 	lastSeenIds?: string[];
@@ -19,6 +21,7 @@ export class FeedjoltTrigger implements INodeType {
 		group: ['trigger'],
 		version: 1,
 		description: 'Starts the workflow when new Feedjolt posts appear',
+		subtitle: '={{$parameter["workspaceSlug"]}}',
 		defaults: {
 			name: 'Feedjolt Trigger',
 		},
