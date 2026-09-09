@@ -1,0 +1,10 @@
+{
+	"node": "n8n-nodes-feedjolt.feedjolt",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Productivity"],
+	"resources": {
+		"credentialDocumentation": [{"url": "https://www.feedjolt.com/en/docs/developers"}],
+		"primaryDocumentation": [{"url": "https://www.feedjolt.com/en/docs/developers"}]
+	}
+}
